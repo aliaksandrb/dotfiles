@@ -211,7 +211,9 @@
       </action>
     </keybind>
     <keybind key="W-F1">
-      <action name="Desktop"/>
+      <action name="Desktop">
+        <desktop>1</desktop>
+      </action>
     </keybind>
     <keybind key="W-F2">
       <action name="Desktop">
@@ -317,16 +319,24 @@
       </action>
     </keybind>
     <keybind key="super-KP_Home">
-      <action name="execute"/>
+      <action name="Execute">
+        <command>wmctrl -r :ACTIVE: -e 0,0,0,944,520</command>
+      </action>
     </keybind>
     <keybind key="super-KP_End">
-      <action name="execute"/>
+      <action name="Execute">
+        <command>wmctrl -r :ACTIVE: -e 0,0,541,944,520</command>
+      </action>
     </keybind>
     <keybind key="super-KP_Prior">
-      <action name="execute"/>
+      <action name="Execute">
+        <command>wmctrl -r :ACTIVE: -e 0,945,0,944,520</command>
+      </action>
     </keybind>
     <keybind key="super-KP_Next">
-      <action name="execute"/>
+      <action name="Execute">
+        <command>wmctrl -r :ACTIVE: -e 0,945,541,944,520</command>
+      </action>
     </keybind>
   </keyboard>
   <mouse>
