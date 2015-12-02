@@ -1,5 +1,6 @@
 [Added Associations]
 image/png=geeqie.desktop;
+application/vnd.tcpdump.pcap=mousepad.desktop;
 
 [Default Applications]
 image/png=geeqie.desktop

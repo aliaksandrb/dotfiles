@@ -1,0 +1,4 @@
+tags
+.cache
+.vagrant
+*.swp

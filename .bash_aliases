@@ -44,3 +44,5 @@ export EDITOR=vim
 alias pt='nosetests --rednose --force-color'
 
 alias ag='clear && ag'
+
+alias p3='python3.4'

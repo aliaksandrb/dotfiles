@@ -31,13 +31,14 @@ set cursorline
 augroup vimrc_autocmds
 au!
     autocmd BufRead * highlight ColorColumn ctermbg=235 guibg=#262626
-    autocmd BufRead * let &colorcolumn=join(range(81,200),",")
+    autocmd BufRead * let &colorcolumn=join(range(79,200),",")
 "    autocmd BufRead * match Error /\%81v.*/
 augroup END
 
 au BufNewFile,BufRead *.ejs set filetype=html
 au BufNewFile,BufRead *.emblem set filetype=slim
 autocmd FileType javascript setlocal shiftwidth=4 tabstop=4
+autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4
 
 " hi CursorLine   cterm=NONE ctermbg=black guibg=black
 " set showmatch
@@ -137,6 +138,22 @@ Bundle 'scrooloose/nerdtree'
 " Bundle 'tpope/vim-bundler'
 " Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-endwise'
+
+" easymotion
+Bundle 'easymotion/vim-easymotion'
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+nmap <leader>s <Plug>(easymotion-s)
+
+" Turn on case insensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <leader>j <Plug>(easymotion-j)
+map <leader>k <Plug>(easymotion-k)
+
+
+
 
 filetype plugin indent on
 syntax enable

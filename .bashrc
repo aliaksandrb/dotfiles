@@ -118,3 +118,11 @@ fi
 
 ### ALIAKSANDRB
 export PATH="$PATH:$HOME/bin"
+
+# VIRTUALENVWRAPPER
+. /usr/local/bin/virtualenvwrapper.sh
+
+# SECRETS
+if [ -f ~/.bash_secrets ]; then
+    . ~/.bash_secrets
+fi
